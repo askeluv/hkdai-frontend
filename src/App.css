@@ -24,3 +24,7 @@
 .arrow {
   height: 3vmin;
 }
+
+body {
+  font-family: Haas Grot Text R,sans-serif !important;
+}
