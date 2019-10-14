@@ -17,6 +17,12 @@
   color: white;
 }
 
+@media only screen and (max-width: 799px) {
+  .App-header h2 {
+    margin: 0px 8% 0px 8%;
+  }
+}
+
 .App-link {
   color: #09d3ac;
 }
