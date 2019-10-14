@@ -7,7 +7,7 @@ export default function FAQ() {
 
       <h4>What is HKDai?</h4>
       <p>HKDai is a cryptocurrency which - similarly to the Hong Kong Dollar (HKD) - is pegged to the US Dollar (USD) at a rate of 7.8 HKD to 1 USD.</p>
-      <p>While the HKD is pegged by the <a href="https://www.hkma.gov.hk/eng/" target="_blank" rel="noopener noreferrer">Hong Kong Monetary Authority (HKMA)</a> intervening in markets at certain price points (buy at 7.75HKD; sell at 7.85HKD),
+      <p>While the HKD is pegged by the <a href="https://www.hkma.gov.hk/eng/" target="_blank" rel="noopener noreferrer">Hong Kong Monetary Authority (HKMA)</a> intervening in markets at certain price points (sell at 7.75 USD/HKD; buy at 7.85 USD/HKD),
       HKDai is 100% collateralized by <a href="https://makerdao.com/en/dai">Dai</a> - another cryptocurrency pegged to the US Dollar.</p>
       <p>This means that you can <em>always</em> redeem your HKDai for Dai at a rate of <em>exactly</em> 7.8 HKDai for 1 Dai. This is guaranteed via an open-source smart contract issued on the Ethereum blockchain.</p>
 
