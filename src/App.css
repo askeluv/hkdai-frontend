@@ -27,10 +27,6 @@
   color: #09d3ac;
 }
 
-.arrow {
-  height: 3vmin;
-}
-
 body {
   font-family: Haas Grot Text R,sans-serif !important;
 }
@@ -39,10 +35,15 @@ body {
   font-size: 0.85em;
 }
 
+.arrow {
+  height: 30px;
+}
+
 @media only screen and (min-width: 800px) {
   .faq {
     margin: 0px 22% 0px 22%;
   }
+  
 }
 
 @media only screen and (max-width: 799px) {
