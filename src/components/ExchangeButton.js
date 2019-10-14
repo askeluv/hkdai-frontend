@@ -11,7 +11,7 @@ export class ExchangeButton extends Component {
           className="mt-3"
           block="true"
           onClick={this.props.executeExchange}
-        >Exchange {this.props.isFromUsd ? "DAI" : "HKDai"} to {this.props.isFromUsd ? "HKDai" : "DAI"}
+        >Swap {this.props.isFromUsd ? "DAI" : "HKDai"} to {this.props.isFromUsd ? "HKDai" : "DAI"}
       </Button>
     )
   }

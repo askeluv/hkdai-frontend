@@ -7,6 +7,7 @@ import ApproveButton from './ApproveButton';
 import ExchangeButton from './ExchangeButton';
 import LoadingButton from './LoadingButton';
 import NoWalletButton from './NoWalletButton';
+import arrow from '../arrow.svg';
 
 const HKDAI_ABI = require('../contracts/HKDai.json').abi;
 const HKDAI_CONTRACT_ADDRESS = '0xC1e2cf5dFe3D4A0c3cA0Beb9bC0e911A8A70dD59';
@@ -258,12 +259,13 @@ export class Exchange extends Component {
             <InputGroup.Text>{isFromUsd ? "USD" : "HKD"}</InputGroup.Text>
           </InputGroup.Append>
         </InputGroup>
-            <span
-              role="img"
-              aria-label="exchange"
-              className="mt-3"
-              onClick={this.toggleDirection.bind(this)}
-            >⬇️</span>
+          <img
+            onClick={this.toggleDirection.bind(this)}
+            style={{cursor: 'pointer'}}
+            src={arrow}
+            alt="arrow"
+            className="arrow m-3"
+          />
         <InputGroup block="true">
           <InputGroup.Prepend>
             <InputGroup.Text>$</InputGroup.Text>
@@ -280,7 +282,7 @@ export class Exchange extends Component {
         </InputGroup>
         {(isTransacting || !hasLoaded) && <LoadingButton/>}
         {(!isTransacting && hasLoaded && !account) && <NoWalletButton/>}
-        {!isTransacting && hasLoaded && isApproved && <ExchangeButton executeExchange={this.executeExchange.bind(this)} />}
+        {!isTransacting && hasLoaded && isApproved && <ExchangeButton isFromUsd={isFromUsd} executeExchange={this.executeExchange.bind(this)} />}
         {!isTransacting && hasLoaded && account && !isApproved && <ApproveButton approveContract={this.approveContract.bind(this)} />}
         {account && <Balance hkd={hkdBalance} dai={daiBalance} />}
       </div>

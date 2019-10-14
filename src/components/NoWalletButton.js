@@ -11,7 +11,7 @@ export class NoWalletButton extends Component {
           size="lg"
           className="mt-3"
           block="true"
-        >No Wallet</Button>
+        >No Wallet Found</Button>
     )
   }
 }
