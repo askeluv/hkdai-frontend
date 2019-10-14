@@ -3,11 +3,11 @@
 }
 
 .App-logo {
-  height: 20vmin;
+  height: 12vmin;
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #262626;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -27,4 +27,27 @@
 
 body {
   font-family: Haas Grot Text R,sans-serif !important;
+}
+
+.lead-in {
+  font-size: 0.85em;
+}
+
+.faq {
+  margin: 0px 22% 0px 22%;
+}
+
+.faq p {
+  text-align: left;
+}
+
+.App-footer {
+  background-color: #262626;
+  min-height: 10vh;
+  margin-top: 5%;
+}
+
+.App-logo-footer {
+  max-height: 5vh;
+  margin: 1% 0% 1% 0%;
 }

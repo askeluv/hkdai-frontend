@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 
 import Button from 'react-bootstrap/Button';
-import Spinner from 'react-bootstrap/Spinner';
 
 export class NoWalletButton extends Component {
   render() {

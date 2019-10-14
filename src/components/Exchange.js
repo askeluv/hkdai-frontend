@@ -245,6 +245,7 @@ export class Exchange extends Component {
     } = this.state;
     return (
       <div>
+        <p className="lead-in" block>Deposit {isFromUsd ? "Dai to get HKDai" : "HKDai to get Dai"}</p>
         <InputGroup block="true">
           <InputGroup.Prepend>
             <InputGroup.Text>$</InputGroup.Text>
